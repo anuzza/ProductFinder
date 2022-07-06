@@ -9,5 +9,3 @@ root.render(
         <App/>
     </BrowserRouter>);
 
-//our-domain.com =>componenet A
-//our-domain.com/products=>componentB

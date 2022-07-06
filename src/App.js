@@ -1,7 +1,8 @@
 import {Route} from 'react-router-dom';
 import Welcome from './pages/Welcome';
-import Products from './pages/Producst';
+import Products from './pages/Products';
 import MainHeader from './components/MainHeader';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <Route path = '/products'>
           <Products/>
         </Route>
+        <Route path = '/product-detail/:productId'>
+          <ProductDetail/>
+        </Route>
 
       </main>
       
@@ -22,3 +26,7 @@ function App() {
 }
 
 export default App;
+
+//our-domain.com/welcome=>Welcome component 
+//our-domain.com/products=>Products Component
+//our-domain.com/product-detail/<anyvalue>=> ProductDetail Component
